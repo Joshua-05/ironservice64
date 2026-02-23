@@ -9,183 +9,15 @@ const {
 } = Astro.props as IServiceItem;
 ---
 
-<!-- <div role="listitem" class="item w-dyn-item">
-  <a href={propertyUrl} class="card-cms properties w-inline-block">
-    <div class="tumbnail-wrapper">
-      <div class="content-cms _2">
-        <div class="column-wrapper-cms">
-          <img
-            width="45"
-            height="45"
-            alt=""
-            src="/icons/locations.svg"
-            loading="lazy"
-            class="icon"
-          />
-        </div>
-      </div>
-      <div class="content-cms">
-        <div class="sub-heading-regular cms">{title}</div>
-      </div>
-      <img
-        style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-        src={imageUrl}
-        alt="Tumbnail"
-        loading="lazy"
-        sizes="100vw"
-        class="tumbnail properties"
-      />
-      <div class="description-overlay">
-        <div class="description-content">
-          <p class="description-text">{description}</p>
-        </div>
-      </div>
-      
-      <div
-        style="display: none; transform: translate3d(0px, 0px, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-        class="icon-wrapper popup"
-      >
-        <img
-          width="45"
-          height="45"
-          alt=""
-          src="./assets/68c0e3e4af3be748783bb49b_mynaui--arrow-up-right (2).svg"
-          loading="lazy"
-          class="icon"
-        />
-      </div>
-    </div>
-  </a>
-</div> -->
-
-<!-- <style>
-    .card-cms.properties {
-        display: block;
-        position: relative;
-        overflow: hidden;
-        border-radius: 16px;
-        text-decoration: none;
-        color: inherit;
-        transition: all 0.3s ease;
-    }
-    
-    .tumbnail-wrapper {
-        position: relative;
-        overflow: hidden;
-        border-radius: 16px;
-    }
-    
-    .tumbnail.properties {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-
-    .content-cms_2 {
-      position: absolute;
-      top: 0px;
-    }
-    
-    .content-cms {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-        color: white;
-        padding: 20px;
-        transition: all 0.3s ease;
-        z-index: 2;
-    }
-    
-    .description-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.8);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: 1;
-        padding: 20px;
-        pointer-events: none;
-    }
-    
-    .description-content {
-        color: white;
-        text-align: center;
-        transform: translateY(20px);
-        transition: transform 0.3s ease;
-    }
-    
-    .description-text {
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.4;
-        font-weight: 400;
-    }
-    
-    .card-cms.properties:hover .tumbnail.properties {
-        transform: scale(1.05);
-    }
-    
-    .card-cms.properties:hover .content-cms {
-      background: rgba(0, 0, 0, 0) !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-    }
-    
-    .card-cms.properties:hover .description-overlay {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    
-    .card-cms.properties:hover .description-content {
-        transform: translateY(0);
-    }
-    
-    .sub-heading-regular.cms {
-        font-size: 18px;
-      font-weight: 600;
-      margin: 0;
-      color: white;
-      background: none !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-      filter: none !important;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
-      position: relative;
-      z-index: 3;
-    }
-    
-    .card-cms.properties:hover .sub-heading-regular.cms {
-      color: transparent; 
-      text-shadow: none;
-    }
-</style> -->
-
 <div role="listitem" class="item w-dyn-item">
   <a data-w-id="d6bdcc75-a34d-8d32-0b2b-9c2af3c83756" href={propertyUrl} class="card-cms properties w-inline-block">
       <div class="tumbnail-wrapper">
           <div class="content-cms _2">
               <div class="column-wrapper-cms">
-                  <img width="45" height="45" alt="" src="/icons/locations.svg" loading="lazy" class="icon"/>
+                  <img width="45" height="45" alt="маркер" src="/icons/locations.svg" loading="lazy" class="icon"/>
                   <div class="title-badge cms-card">Саратов, Энгельс</div>
               </div>
               <div class="column-wrapper-cms avabilty">
-                  <!-- <div class="badge mini">
-                      <div class="title-badge">2</div>
-                      <div class="title-badge">Bedroom</div>
-                  </div>
-                  <div class="badge mini">
-                      <div class="title-badge">2</div>
-                      <div class="title-badge">Bathroom</div>
-                  </div> -->
               </div>
           </div>
           <div class="content-cms">
@@ -197,44 +29,34 @@ const {
                 </div>
               )}
           </div>
-          <img src={imageUrl} loading="lazy" alt="Tumbnail" sizes="100vw" class="tumbnail properties _2"/>
+          <img src={imageUrl} loading="lazy" alt={title} sizes="100vw" class="tumbnail properties _2"/>
           <div style="display:none;-webkit-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0) " class="icon-wrapper popup">
-              <img width="45" height="45" alt="" src="/icons/right-up.png" loading="lazy" class="icon"/>
+              <img width="45" height="45" alt="стрелка" src="/icons/right-up.png" loading="lazy" class="icon"/>
           </div>
       </div>
   </a>
 </div>
 
 <script>
-  // Ждем загрузки DOM
+
   document.addEventListener('DOMContentLoaded', function() {
-    // Находим все карточки
+
     const cards = document.querySelectorAll('.card-cms.properties');
     
     cards.forEach(card => {
-      // Для каждой карточки находим нужные элементы внутри неё
       const thumbnail = card.querySelector('.tumbnail.properties._2');
       const iconWrapper = card.querySelector('.icon-wrapper.popup');
       
-      // Проверяем, что оба элемента существуют и являются HTMLElement
       if (thumbnail instanceof HTMLElement && iconWrapper instanceof HTMLElement) {
-        
-        // При наведении на карточку
         card.addEventListener('mouseenter', function() {
-          // Показываем иконку
           iconWrapper.style.display = 'flex';
-          
-          // Приближаем фото
+
           thumbnail.style.transform = 'scale(1.1)';
           thumbnail.style.transition = 'transform 0.9s ease';
         });
         
-        // Когда убираем курсор с карточки
         card.addEventListener('mouseleave', function() {
-          // Скрываем иконку
           iconWrapper.style.display = 'none';
-          
-          // Возвращаем фото в исходный размер
           thumbnail.style.transform = 'scale(1)';
         });
         

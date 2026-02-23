@@ -1,0 +1,86 @@
+---
+const brands = [
+  { name: "Sony", logo: "/hero/sony.jpg" },
+  { name: "Samsung", logo: "/hero/samsung.png" },
+  { name: "Xerox", logo: "/hero/xerox.png" },
+  { name: "hp", logo: "/hero/hp.png" },
+  { name: "Stinol", logo: "/hero/stinol.png" },
+  { name: "Canon", logo: "/hero/canon.png" },
+];
+---
+
+<div class="brands-grid">
+  {brands.map((brand) => (
+    <div class="brand-card">
+      <img 
+        src={brand.logo} 
+        alt={brand.name}
+        class="brand-logo"
+        loading="lazy"
+      />
+    </div>
+  ))}
+</div>
+
+<style>
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  .brand-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    aspect-ratio: 1 / 0.8;
+  }
+
+  .brand-card:hover {
+    background-color: #ffffff;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    transform: translateY(-6px) scale(1.02);
+  }
+
+  .brand-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: saturate(0.7) brightness(0.95);
+    opacity: 0.8;
+    transition: all 0.4s ease;
+  }
+
+  .brand-card:hover .brand-logo {
+    filter: saturate(1.1) brightness(1.05) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
+    opacity: 1;
+    transform: scale(1.06);
+  }
+
+  @media (max-width: 768px) {
+    .brands-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      max-width: 600px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .brands-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      max-width: 300px;
+    }
+    
+    .brand-card {
+      padding: 20px;
+    }
+  }
+</style>

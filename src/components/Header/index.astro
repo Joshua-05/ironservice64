@@ -60,7 +60,7 @@ const {
           aria-expanded="false"
         >
           <div class="menu-icon">
-            <div class="navbar-link-2">Menu</div>
+            <div class="navbar-link-2">Меню</div>
           </div>
         </div>
 
@@ -79,3 +79,33 @@ const {
     </div>
   </div>
 </nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.w-nav-button');
+    const navMenu = document.querySelector('.w-nav-menu');
+    const navOverlay = document.querySelector('.w-nav-overlay');
+    
+    if (!menuButton || !navMenu) return;
+    
+    const menuButtonEl = menuButton as HTMLElement;
+    const navMenuEl = navMenu as HTMLElement;
+    const navOverlayEl = navOverlay as HTMLElement | null;
+    
+    menuButtonEl.addEventListener('click', () => {
+      const expanded = menuButtonEl.getAttribute('aria-expanded') === 'true';
+      
+      menuButtonEl.setAttribute('aria-expanded', (!expanded).toString());
+      
+      if (!expanded) {
+        navMenuEl.classList.add('open');
+        navMenuEl.style.display = 'block';
+        if (navOverlayEl) navOverlayEl.style.display = 'block';
+      } else {
+        navMenuEl.classList.remove('open');
+        navMenuEl.style.display = 'none';
+        if (navOverlayEl) navOverlayEl.style.display = 'none';
+      }
+    });
+  });
+</script>
