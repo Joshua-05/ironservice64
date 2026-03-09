@@ -34,6 +34,17 @@ const {
     <a href={brandHref} class="navbar-brand w-inline-block">
       <img loading="lazy" src={logoSrc} alt={logoAlt} class="logo" />
     </a>
+    <div class="phone-number">
+      <a href="tel:+79042407272" class="phone-number__text">8 904-240-72-72</a>
+      <a href="tel:+79042407272" class="phone-number__icon">
+        <img
+          loading="lazy"
+          src="/icons/phone.svg"
+          alt="Phone Icon"
+          class="phone-icon"
+        />
+      </a>
+    </div>
 
     <div class="button-wrap-nav">
       <a href={ctaHref} class="button w-button">
@@ -66,11 +77,13 @@ const {
 
         <nav role="navigation" class="navbar-menu-wrapper w-nav-menu">
           <div class="menu-list">
-            {links.map((link) => (
-              <a href={link.href} class="navbar-link">
-                {link.title}
-              </a>
-            ))}
+            {
+              links.map((link) => (
+                <a href={link.href} class="navbar-link">
+                  {link.title}
+                </a>
+              ))
+            }
           </div>
         </nav>
       </div>
@@ -80,31 +93,60 @@ const {
   </div>
 </nav>
 
+<style>
+  .phone-number {
+    margin-left: 10px;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  .phone-number .phone-number__icon {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .phone-number {
+      margin-left: 10px;
+      padding: 10px;
+    }
+    .phone-number .phone-number__text {
+      display: none;
+    }
+    .phone-number .phone-number__icon {
+      display: block;
+    }
+    .phone-number__icon img {
+      width: 20px;
+      height: 20px;
+      border-radius: 0;
+    }
+  }
+</style>
+
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.querySelector('.w-nav-button');
-    const navMenu = document.querySelector('.w-nav-menu');
-    const navOverlay = document.querySelector('.w-nav-overlay');
-    
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector(".w-nav-button");
+    const navMenu = document.querySelector(".w-nav-menu");
+    const navOverlay = document.querySelector(".w-nav-overlay");
+
     if (!menuButton || !navMenu) return;
-    
+
     const menuButtonEl = menuButton as HTMLElement;
     const navMenuEl = navMenu as HTMLElement;
     const navOverlayEl = navOverlay as HTMLElement | null;
-    
-    menuButtonEl.addEventListener('click', () => {
-      const expanded = menuButtonEl.getAttribute('aria-expanded') === 'true';
-      
-      menuButtonEl.setAttribute('aria-expanded', (!expanded).toString());
-      
+
+    menuButtonEl.addEventListener("click", () => {
+      const expanded = menuButtonEl.getAttribute("aria-expanded") === "true";
+
+      menuButtonEl.setAttribute("aria-expanded", (!expanded).toString());
+
       if (!expanded) {
-        navMenuEl.classList.add('open');
-        navMenuEl.style.display = 'block';
-        if (navOverlayEl) navOverlayEl.style.display = 'block';
+        navMenuEl.classList.add("open");
+        navMenuEl.style.display = "block";
+        if (navOverlayEl) navOverlayEl.style.display = "block";
       } else {
-        navMenuEl.classList.remove('open');
-        navMenuEl.style.display = 'none';
-        if (navOverlayEl) navOverlayEl.style.display = 'none';
+        navMenuEl.classList.remove("open");
+        navMenuEl.style.display = "none";
+        if (navOverlayEl) navOverlayEl.style.display = "none";
       }
     });
   });
