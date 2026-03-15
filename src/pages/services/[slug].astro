@@ -23,7 +23,7 @@ const { category } = Astro.props;
 
 <BaseLayout title={`${category.title} | Сервисный центр`}>
   <SectionTop>
-    <SectionHeader heading={category.title} paragraph={category.description} haveButton=true pathUrl="/services"/>
+    <SectionHeader heading={category.title} paragraph={category.text} haveButton=true pathUrl="/services"/>
     <ServiceList services={category.items} />
   </SectionTop>
 </BaseLayout>

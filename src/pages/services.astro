@@ -10,13 +10,13 @@ import type { IPageDataProps } from "../utils/types";
 const page = await getEntry("pages", "services");
 if (!page) throw new Error("Home page not found");
 
-const {title, description, services, seo } = page.data as IPageDataProps;
+const {title, text, services, seo } = page.data as IPageDataProps;
 
 ---
 
 <BaseLayout title={seo.title} description={seo.description}>
     <SectionTop>
-        <SectionHeader heading={title} paragraph={description}/>
+        <SectionHeader heading={title} paragraph={text}/>
         <ServiceList services={services} />
     </SectionTop>
 </BaseLayout>

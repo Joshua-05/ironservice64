@@ -5,9 +5,20 @@ import Header from "../../components/Header/index.astro";
 interface ISeo {
   title: string;
   description: string;
+  keywords: string[];
 }
 
-const { title, description } = Astro.props;
+interface IBaseLayoutProps {
+  title: string;
+  description: string;
+  seo?: ISeo;
+}
+
+const { title, description, seo } = Astro.props as IBaseLayoutProps;
+// SEO метатеги приоритетно из seo, иначе fallback на props
+const seoTitle = seo?.title || title;
+const seoDescription = seo?.description || description;
+const seoKeywords = seo?.keywords?.join(", ") || "";
 ---
 
 <!doctype html>
@@ -19,8 +30,15 @@ const { title, description } = Astro.props;
     <link rel="stylesheet" href="/css/css.css" />
     <link rel="stylesheet" href="/css/fazora.webflow.css" />
 
-    <meta name="description" content={description} />
-    <title>{title}</title>
+    <!-- Основные метатеги для Яндекса -->
+    <title>{seoTitle}</title>
+    <meta name="description" content={seoDescription} />
+    {seoKeywords && <meta name="keywords" content={seoKeywords} />}
+
+    <!-- OG-теги для соцсетей -->
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={seoDescription} />
+    <meta property="og:type" content="website" />
     <script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer
     ></script>
   </head>
