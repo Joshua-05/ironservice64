@@ -60,7 +60,7 @@ services:
             - ремонт кофемашины на дому саратов
             - мастер кофемашины саратов
             - ремонт кофемашины энгельс
-        price: 1000
+        price: 1500
         imageUrl: /image/services/kofemashina.jpg
         propertyUrl: /services/items/kofemashina
       - title: Ремонт мультиварки в Саратове
@@ -87,7 +87,7 @@ services:
             - ремонт мультиварки на дому саратов
             - мастер мультиварки саратов
             - ремонт мультиварки энгельс
-        price: 1000
+        price: 1500
         imageUrl: /image/services/myltivarka.jpg
         propertyUrl: /services/items/multivarka
       - title: Ремонт фена в Саратове
@@ -114,7 +114,7 @@ services:
             - ремонт фена на дому саратов
             - мастер фена саратов
             - ремонт фена энгельс
-        price: 600
+        price: 1200
         imageUrl: /image/services/fen.jpg
         propertyUrl: /services/items/fen
       - title: Ремонт плойки в Саратове
@@ -141,7 +141,7 @@ services:
             - ремонт плойки на дому саратов
             - мастер плойки саратов
             - ремонт плойки энгельс
-        price: 600
+        price: 1200
         imageUrl: /image/services/ployka.jpg
         propertyUrl: /services/items/ployka
       - title: Ремонт вытяжки в Саратове и Энгельсе
@@ -168,7 +168,7 @@ services:
             - ремонт вытяжки на дому саратов
             - мастер вытяжки саратов
             - ремонт вытяжки энгельс
-        price: 1200
+        price: 1500
         imageUrl: /image/services/vitiajka.jpg
         propertyUrl: /services/items/vytyazhka
       - title: Ремонт блендера и миксера в Саратове
@@ -195,7 +195,7 @@ services:
             - ремонт блендера и миксера на дому саратов
             - мастер блендера и миксера саратов
             - ремонт блендера и миксера энгельс
-        price: 600
+        price: 1200
         imageUrl: /image/services/blender.jpg
         propertyUrl: /services/items/blender
       - title: Ремонт духовки в Саратове и Энгельсе
@@ -222,7 +222,7 @@ services:
             - ремонт духовки на дому саратов
             - мастер духовки саратов
             - ремонт духовки энгельс
-        price: 1200
+        price: 1500
         imageUrl: /image/services/dyhovka.jpg
         propertyUrl: /services/items/duhovka
       - title: Ремонт утюга и паровой станции в Саратове
@@ -249,7 +249,7 @@ services:
             - ремонт утюга и паровой станции на дому саратов
             - мастер утюга и паровой станции саратов
             - ремонт утюга и паровой станции энгельс
-        price: 600
+        price: 1000
         imageUrl: /image/services/ytyg.jpg
         propertyUrl: /services/items/utyug
       - title: Ремонт чайника в Саратове и Энгельсе
@@ -276,7 +276,7 @@ services:
             - ремонт чайника на дому саратов
             - мастер чайника саратов
             - ремонт чайника энгельс
-        price: 600
+        price: 1000
         imageUrl: /image/services/chainik.jpg
         propertyUrl: /services/items/chainik
       - title: Ремонт обогревателя (радиатора) в Саратове
@@ -303,7 +303,7 @@ services:
             - ремонт обогревателя (радиатора) на дому саратов
             - мастер обогревателя (радиатора) саратов
             - ремонт обогревателя (радиатора) энгельс
-        price: 600
+        price: 1000
         imageUrl: /image/services/obogrevatel.jpg
         propertyUrl: /services/items/obogrevatel
       - title: Ремонт кулера для воды в Саратове и Энгельсе
@@ -330,7 +330,7 @@ services:
             - ремонт кулера для воды на дому саратов
             - мастер кулера для воды саратов
             - ремонт кулера для воды энгельс
-        price: 1000
+        price: 1500
         imageUrl: /image/services/kyler.jpg
         propertyUrl: /services/items/kuler
       - title: Ремонт фризера в Саратове и Энгельсе
@@ -357,7 +357,7 @@ services:
             - ремонт фризера на дому саратов
             - мастер фризера саратов
             - ремонт фризера энгельс
-        price: 1500
+        price: 2500
         imageUrl: /image/services/frizer.jpg
         propertyUrl: /services/items/frizer
       - title: Ремонт антенны в Саратове
@@ -384,7 +384,7 @@ services:
             - ремонт антенны на дому саратов
             - мастер антенны саратов
             - ремонт антенны энгельс
-        price: 1000
+        price: 3000
         imageUrl: /image/services/antenna.png
         propertyUrl: /services/items/antenna
       - title: Ремонт проектора в Саратове
@@ -411,7 +411,7 @@ services:
             - ремонт проектора на дому саратов
             - мастер проектора саратов
             - ремонт проектора энгельс
-        price: 1000
+        price: 1500
         imageUrl: /image/services/proector.png
         propertyUrl: /services/items/proektor
       - title: Ремонт швейной машины в Саратове
@@ -438,7 +438,7 @@ services:
             - ремонт швейной машины на дому саратов
             - мастер швейной машины саратов
             - ремонт швейной машины энгельс
-        price: 1200
+        price: 1500
         imageUrl: /image/services/sheveinaia.jpg
         propertyUrl: /services/items/shveynaya-mashina
       - title: Ремонт фотоаппарата в Саратове
@@ -465,7 +465,7 @@ services:
             - ремонт фотоаппарата на дому саратов
             - мастер фотоаппарата саратов
             - ремонт фотоаппарата энгельс
-        price: 700
+        price: 1500
         imageUrl: /image/services/fotoapparat.jpg
         propertyUrl: /services/items/fotoapparat
       - title: Ремонт соковыжималки в Саратове
@@ -492,7 +492,7 @@ services:
             - ремонт соковыжималки на дому саратов
             - мастер соковыжималки саратов
             - ремонт соковыжималки энгельс
-        price: 600
+        price: 1000
         imageUrl: /image/services/sokovizimalka.jpg
         propertyUrl: /services/items/sokovyzhimalka
       - title: Ремонт хлебопечки в Саратове
@@ -519,7 +519,7 @@ services:
             - ремонт хлебопечки на дому саратов
             - мастер хлебопечки саратов
             - ремонт хлебопечки энгельс
-        price: 1000
+        price: 1500
         imageUrl: /image/services/hlebopechka.jpg
         propertyUrl: /services/items/hlebopechka
       - title: Ремонт мясорубки в Саратове
@@ -546,7 +546,7 @@ services:
             - ремонт мясорубки на дому саратов
             - мастер мясорубки саратов
             - ремонт мясорубки энгельс
-        price: 600
+        price: 1000
         imageUrl: /image/services/miasorybka.jpg
         propertyUrl: /services/items/myasorubka
       - title: Ремонт йогуртницы в Саратове
@@ -573,7 +573,7 @@ services:
             - ремонт йогуртницы на дому саратов
             - мастер йогуртницы саратов
             - ремонт йогуртницы энгельс
-        price: 600
+        price: 1200
         imageUrl: /image/services/iogyrtnica.png
         propertyUrl: /services/items/yogurtnitsa
       - title: Ремонт пылесоса в Саратове
@@ -600,7 +600,7 @@ services:
             - ремонт пылесоса на дому саратов
             - мастер пылесоса саратов
             - ремонт пылесоса энгельс
-        price: 600
+        price: 1000
         imageUrl: /image/services/pilisos.jpg
         propertyUrl: /services/items/pylesos
       - title: Ремонт СВЧ-печи в Саратове
@@ -627,7 +627,7 @@ services:
             - ремонт свч-печи на дому саратов
             - мастер свч-печи саратов
             - ремонт свч-печи энгельс
-        price: 600
+        price: 1000
         imageUrl: /image/services/svjpechka.jpg
         propertyUrl: /services/items/svch-pech
       - title: Ремонт телевизора в Саратове
@@ -654,7 +654,7 @@ services:
             - ремонт телевизора на дому саратов
             - мастер телевизора саратов
             - ремонт телевизора энгельс
-        price: 1000
+        price: 1500
         imageUrl: /image/services/televizor.jpg
         propertyUrl: /services/items/televizor
       - title: Ремонт электрической плиты в Саратове
@@ -681,7 +681,7 @@ services:
             - ремонт электрической плиты на дому саратов
             - мастер электрической плиты саратов
             - ремонт электрической плиты энгельс
-        price: 1200
+        price: 1500
         imageUrl: /image/services/electroplita.jpg
         propertyUrl: /services/items/elektroplita
       - title: Ремонт водонагревателя в Саратове
@@ -735,7 +735,7 @@ services:
             - ремонт газовой плиты на дому саратов
             - мастер газовой плиты саратов
             - ремонт газовой плиты энгельс
-        price: 1200
+        price: 1500
         imageUrl: /image/services/gazplita.jpg
         propertyUrl: /services/items/gazovaya-plita
       - title: Ремонт стиральной машины в Саратове
@@ -789,7 +789,7 @@ services:
             - ремонт посудомоечной машины на дому саратов
             - мастер посудомоечной машины саратов
             - ремонт посудомоечной машины энгельс
-        price: 1200
+        price: 1500
         imageUrl: /image/services/posydamoika.jpeg
         propertyUrl: /services/items/posudomoechnaya-mashina
       - title: Ремонт холодильника в Саратове
@@ -816,7 +816,7 @@ services:
             - ремонт холодильника на дому саратов
             - мастер холодильника саратов
             - ремонт холодильника энгельс
-        price: 600
+        price: 1000
         imageUrl: /image/services/holodilnik.jpg
         propertyUrl: /services/items/holodilnik
 
@@ -858,7 +858,7 @@ services:
             - ремонт тепловой завесы на дому саратов
             - мастер тепловой завесы саратов
             - ремонт тепловой завесы энгельс
-        price: 1000
+        price: 2000
         imageUrl: /image/services/zavesa.jpg
         propertyUrl: /services/items/zavesa
       - title: Ремонт обогревателя (радиатора) в Саратове
@@ -912,7 +912,7 @@ services:
             - ремонт сплит-системы и кондиционера на дому саратов
             - мастер сплит-системы и кондиционера саратов
             - ремонт сплит-системы и кондиционера энгельс
-        price: 500
+        price: 1000
         imageUrl: /image/services/kondicioner.jpg
         propertyUrl: /services/items/kondicsioner
 
@@ -954,7 +954,7 @@ services:
             - ремонт компьютера на дому саратов
             - мастер компьютера саратов
             - ремонт компьютера энгельс
-        price: 800
+        price: 1000
         imageUrl: /image/services/computer.jpg
         propertyUrl: /services/items/computer
       - title: Ремонт монитора в Саратове
@@ -981,7 +981,7 @@ services:
             - ремонт монитора на дому саратов
             - мастер монитора саратов
             - ремонт монитора энгельс
-        price: 500
+        price: 1500
         imageUrl: /image/services/monitor.jpg
         propertyUrl: /services/items/monitor
       - title: Ремонт видео и аудио техники в Саратове
@@ -1008,7 +1008,7 @@ services:
             - ремонт видео и аудио техники на дому саратов
             - мастер видео и аудио техники саратов
             - ремонт видео и аудио техники энгельс
-        price: 600
+        price: 2000
         imageUrl: /image/services/videoaudiotehnika.jpg
         propertyUrl: /services/items/video-audio-tehnika
       - title: Ремонт игровой приставки в Саратове
@@ -1035,7 +1035,7 @@ services:
             - ремонт игровой приставки на дому саратов
             - мастер игровой приставки саратов
             - ремонт игровой приставки энгельс
-        price: 600
+        price: 1500
         imageUrl: /image/services/gamingconsoles.png
         propertyUrl: /services/items/gaming-consoles
       - title: Ремонт ноутбука в Саратове
@@ -1062,7 +1062,7 @@ services:
             - ремонт ноутбука на дому саратов
             - мастер ноутбука саратов
             - ремонт ноутбука энгельс
-        price: 1200
+        price: 1000
         imageUrl: /image/services/noytbyk.jpg
         propertyUrl: /services/items/noytbyk
       - title: Ремонт планшета в Саратове
@@ -1089,7 +1089,7 @@ services:
             - ремонт планшета на дому саратов
             - мастер планшета саратов
             - ремонт планшета энгельс
-        price: 800
+        price: 1500
         imageUrl: /image/services/planshet.jpg
         propertyUrl: /services/items/planshet
       - title: Ремонт телефона в Саратове
@@ -1116,7 +1116,7 @@ services:
             - ремонт телефона на дому саратов
             - мастер телефона саратов
             - ремонт телефона энгельс
-        price: 150
+        price: 1000
         imageUrl: /image/services/telefon.jpeg
         propertyUrl: /services/items/telefon
       - title: Ремонт телевизора в Саратове
@@ -1170,7 +1170,7 @@ services:
             - ремонт радар-детектора на дому саратов
             - мастер радар-детектора саратов
             - ремонт радар-детектора энгельс
-        price: 800
+        price: 1500
         imageUrl: /image/services/radardetector.jpg
         propertyUrl: /services/items/radardetector
       - title: Ремонт видеорегистратора в Саратове
@@ -1197,7 +1197,7 @@ services:
             - ремонт видеорегистратора на дому саратов
             - мастер видеорегистратора саратов
             - ремонт видеорегистратора энгельс
-        price: 800
+        price: 1500
         imageUrl: /image/services/videoregestrator.png
         propertyUrl: /services/items/video-regestrator
       - title: Ремонт проектора в Саратове
@@ -1278,7 +1278,7 @@ services:
             - ремонт навигатора на дому саратов
             - мастер навигатора саратов
             - ремонт навигатора энгельс
-        price: 800
+        price: 1200
         imageUrl: /image/services/navigator.jpeg
         propertyUrl: /services/items/navigator
 
@@ -1320,7 +1320,7 @@ services:
             - ремонт заправка картриджа на дому саратов
             - мастер заправка картриджа саратов
             - ремонт заправка картриджа энгельс
-        price: 250
+        price: 350
         imageUrl: /image/services/katridj.jpg
         propertyUrl: /services/items/katridj
       - title: Ремонт принтера в Саратове
@@ -1347,7 +1347,7 @@ services:
             - ремонт принтера на дому саратов
             - мастер принтера саратов
             - ремонт принтера энгельс
-        price: 300
+        price: 1500
         imageUrl: /image/services/printer.jpg
         propertyUrl: /services/items/printer
 
@@ -1416,7 +1416,7 @@ services:
             - ремонт видеонаблюдения на дому саратов
             - мастер видеонаблюдения саратов
             - ремонт видеонаблюдения энгельс
-        price: 200
+        price: 3500
         imageUrl: /image/services/videonablydenie.jpg
         propertyUrl: /services/items/videonablydenie
 
@@ -1458,7 +1458,7 @@ services:
             - ремонт сварочного аппарата на дому саратов
             - мастер сварочного аппарата саратов
             - ремонт сварочного аппарата энгельс
-        price: 1000
+        price: 2500
         imageUrl: /image/services/svarochnik.jpg
         propertyUrl: /services/items/svarochnik
       - title: Ремонт шуруповерта в Саратове
@@ -1485,7 +1485,7 @@ services:
             - ремонт шуруповерта на дому саратов
             - мастер шуруповерта саратов
             - ремонт шуруповерта энгельс
-        price: 600
+        price: 1500
         imageUrl: /image/services/shyropovert.jpg
         propertyUrl: /services/items/shyropovert
       - title: Ремонт перфоратора в Саратове
@@ -1512,7 +1512,7 @@ services:
             - ремонт перфоратора на дому саратов
             - мастер перфоратора саратов
             - ремонт перфоратора энгельс
-        price: 600
+        price: 1500
         imageUrl: /image/services/perforator.jpg
         propertyUrl: /services/items/perforator
       - title: Ремонт дрели в Саратове
@@ -1539,7 +1539,7 @@ services:
             - ремонт дрели на дому саратов
             - мастер дрели саратов
             - ремонт дрели энгельс
-        price: 600
+        price: 1500
         imageUrl: /image/services/drel.jpg
         propertyUrl: /services/items/drel
 
