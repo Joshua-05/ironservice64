@@ -5,7 +5,7 @@ import MainBlock from "../components/MainBlock/index.astro";
 import Section from "../components/Section/index.astro";
 import SectionHeader from "../components/SectionHeader/index.astro";
 import ServiceList from "../components/ServiceList/index.astro";
-import BrendList from "../widgets/BrendList.astro"
+import BrendList from "../widgets/BrendList.astro";
 
 import Testimonials from "../components/Testimonials/index.astro";
 
@@ -44,36 +44,36 @@ const { title, description, image, advantages, seo } = page.data;
 				services={[
 					{
 						title: "Ремонт бытовой техники",
-						description: "Полный спектр услуг по ремонту всех бытовых приборов -- от мелочей до сложной электроники",
+						description:
+							"Полный спектр услуг по ремонту всех бытовых приборов -- от мелочей до сложной электроники",
 						imageUrl: "/hero/repair1.jpg",
 						propertyUrl: "/services/household",
 					},
 					{
 						title: "Ремонт компьютерной и цифровой техники",
-						description: "Диагностика и восстановление ПК, ноутбуков и периферии — любой сложности и любого производителя.",
+						description:
+							"Диагностика и восстановление ПК, ноутбуков и периферии — любой сложности и любого производителя.",
 						imageUrl: "/hero/repair2.jpg",
 						propertyUrl: "/services/computer",
 					},
 					{
 						title: "Ремонт климатической техники",
-						description: "Профессиональный сервис для систем, создающих ваш комфорт — от кондиционеров до вентиляции.",
+						description:
+							"Профессиональный сервис для систем, создающих ваш комфорт — от кондиционеров до вентиляции.",
 						imageUrl: "/hero/repair3.jpg",
 						propertyUrl: "/services/climatic",
 					},
 					{
 						title: "Ремонт оргтехники",
-						description: "Оперативный ремонт принтеров, МФУ и копиров — чтобы ваш офис работал без остановок.",
+						description:
+							"Оперативный ремонт принтеров, МФУ и копиров — чтобы ваш офис работал без остановок.",
 						imageUrl: "/image/services/printer.jpg",
 						propertyUrl: "/services/office",
 					},
 				]}
 			/>
 		</div>
-		<a
-			data-w-id="ea84d01c-ab2e-9168-935f-62025977c07b"
-			href="/services"
-			class="button w-button">Все услуги</a
-		>
+		<a href="/services" class="button w-button">Все услуги</a>
 	</Section>
 	<div id="about-section"></div>
 	<Section>
@@ -81,17 +81,13 @@ const { title, description, image, advantages, seo } = page.data;
 			heading="О КОМПАНИИ"
 			paragraph="Выезд на ремонт крупной бытовой техники ежедневно. Работаем по Саратову и Энгельсу."
 		/>
-		<div
-			data-w-id="051acf5e-364b-2415-bab4-a6c613538d10"
-			style="opacity: 1; transform: translate3d(0px, 25px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-			class="grid _2"
-		>
+		<div class="grid _2">
 			<Slider />
 			<Advantages />
 		</div>
 	</Section>
 	<Section>
-		<SectionHeader 
+		<SectionHeader
 			heading="БРЕНДЫ"
 			paragraph="Оригинальные запчасти под любой бренд"
 		/>
@@ -100,5 +96,4 @@ const { title, description, image, advantages, seo } = page.data;
 	<Section>
 		<Testimonials />
 	</Section>
-	
 </BaseLayout>
