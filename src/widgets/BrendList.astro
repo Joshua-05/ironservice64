@@ -1,11 +1,6 @@
 ---
 const brands = [
-  { name: "Sony", logo: "/hero/sony.jpg" },
-  { name: "Samsung", logo: "/hero/samsung.png" },
-  { name: "Xerox", logo: "/hero/xerox.png" },
-  { name: "hp", logo: "/hero/hp.png" },
-  { name: "Stinol", logo: "/hero/stinol.png" },
-  { name: "Canon", logo: "/hero/canon.png" },
+  { name: "Бренды", logo: "/hero/brands.jpg" }
 ];
 ---
 
@@ -25,7 +20,7 @@ const brands = [
 <style>
   .brands-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 24px;
     max-width: 900px;
     margin: 0 auto;
@@ -66,7 +61,7 @@ const brands = [
 
   @media (max-width: 768px) {
     .brands-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 16px;
       max-width: 600px;
     }

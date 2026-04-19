@@ -5,8 +5,9 @@ export const collections = {
     type: "content",
     schema: z.object({
       title: z.string(),
-      description: z.string(),
-      image: z.string(),
+      text: z.string(),
+      imageUrl: z.string(),
+      propertyUrl: z.string(),
 
       seo: z.object({
         title: z.string(),
